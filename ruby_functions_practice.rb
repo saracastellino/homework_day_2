@@ -5,7 +5,7 @@
   end
 
   def add(num1, num2)
-    return num1.to_i + num2.to_i
+    return num1 + num2
   end
 
   def subtract(num1, num2)
@@ -62,7 +62,8 @@
 
 
   def volume_of_sphere(r)
-    return  (4/3)* (pi)* (r**3)
+    volume = (4.0/3.0)* (Math::PI)* (r**3)
+    return volume.round(2)
   end
 
 

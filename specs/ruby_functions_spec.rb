@@ -7,34 +7,29 @@ require_relative( '../ruby_functions_practice' )
 class FunctionsTest < MiniTest::Test
 
   def test_return_10()
-    return_10_result = return_10()
-    assert_equal( 10, return_10_result )
+    assert_equal(10, return_10)
   end
 
   def test_add()
-    add_result = add( 1, 2 )
-    assert_equal( 3, add_result )
+    assert_equal( 3, add( 1, 2 ) )
   end
 
   def test_subtract()
-    subtract_result = subtract( 10, 5 )
-    assert_equal( 5, subtract_result )
+    assert_equal( 5, subtract( 10, 5 ) )
   end
 
   def test_multiply()
-    multiply_result = multiply( 4, 2 )
-    assert_equal( 8, multiply_result )
+    assert_equal( 8, multiply( 4, 2 ) )
   end
 
   def test_divide()
-    divide_result = divide( 10, 2 )
-    assert_equal( 5, divide_result )
+    assert_equal( 5, divide( 10, 2 ) )
   end
 
-  def test_length_of_string()
+  def test_find_length_of_string()
     test_string = "A string of length 21"
-    length_of_string = length_of_string( test_string )
-    assert_equal( 21, length_of_string )
+    result = length_of_string( test_string )
+    assert_equal( 21, result )
   end
 
   def test_join_string()
